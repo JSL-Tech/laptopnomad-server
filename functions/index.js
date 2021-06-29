@@ -48,8 +48,8 @@ app.post('/create-checkout-session', async (req, res) => {
       payment_method_types: ['card'],
       line_items: lineItems,
       mode: 'payment',
-      success_url: 'https://laptopnomap.co/success',
-      cancel_url: 'https://laptopnomap.co/cart',
+      success_url: 'https://laptopnomad.co/success',
+      cancel_url: 'https://laptopnomad.co/cart',
     });
   }catch(err) {
     functions.logger.log('Create stripe session error', err.message);
